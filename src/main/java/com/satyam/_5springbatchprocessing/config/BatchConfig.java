@@ -36,18 +36,6 @@ public class BatchConfig {
 
 
     // Item Reader
-  //  @Bean
-//    public FlatFileItemReader<Customer> itemReader() {
-//
-//        FlatFileItemReader<Customer> reader = new FlatFileItemReader<>();
-//
-//        reader.setResource(new FileSystemResource("src/main/resources/customer_data.csv"));
-//        reader.setName("csv-reader");
-//        reader.setLinesToSkip(1);
-//        reader.setLineMapper(lineMapper());
-//
-//        return reader;
-//    }
 
     @Bean
     public FlatFileItemReader<Customer> itemReader() {
@@ -108,16 +96,6 @@ public class BatchConfig {
 
 
     // Item Writer
-//    @Bean
-//    public RepositoryItemWriter<Customer> itemWriter() {
-//
-//        RepositoryItemWriter<Customer> writer = new RepositoryItemWriter<>();
-//
-//        writer.setRepository(repo);
-//        writer.setMethodName("save");
-//        return writer;
-//    }
-//
 
     @Bean
     public RepositoryItemWriter<Customer> itemWriter() {
